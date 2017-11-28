@@ -1,0 +1,288 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    background-size: cover
+}
+.halfsquare {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    background-size: cover
+}
+
+.half-sq33 {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    background-size: cover
+}
+
+.sq33 {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 90%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    background-size: cover
+}
+
+.bckCover{
+    background-size: cover;
+    padding-left: 0px !important;
+    padding-right: 0px !important ;
+
+}
+.content33 {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    color:white;
+    margin-top: 40%;
+    font-size: 18px
+}       
+.content22 {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    color:white;
+    font-size: 18px
+}
+
+.contenthalf33 {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    color:white;
+    margin-top: 15%;
+    font-size: 18px
+}
+
+.fade{
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; 
+    bottom:0px !important;
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+
+
+
+}
+
+.border-rigth-gray{
+    border-right: 1px solid lightgray
+}
+
+.border-bottom-gray{
+    border-bottom: 1px solid lightgray
+}
+
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    background-size: cover
+}
+.halfsquare {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    background-size: cover
+}
+
+.half-sq33 {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 50%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    background-size: cover
+}
+
+.sq33 {
+    float:left;
+    position: relative;
+    width: 100%;
+    padding-bottom : 90%; /* = width for a 1:1 aspect ratio */
+    overflow:hidden;
+    background-size: cover
+}
+
+.bckCover{
+    background-size: cover;
+    padding-left: 0px !important;
+    padding-right: 0px !important ;
+
+}
+.content33 {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    color:white;
+    margin-top: 40%;
+    font-size: 18px
+}       
+.content22 {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    color:white;
+    font-size: 18px
+}
+
+.contenthalf33 {
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; /* = 100% - 2*5% padding */
+    color:white;
+    margin-top: 15%;
+    font-size: 18px
+}
+
+.fade{
+    position:absolute;
+    height:100%; /* = 100% - 2*5% padding */
+    width:100%; 
+    bottom:0px !important;
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+
+
+
+}
+
+.border-rigth-gray{
+    border-right: 1px solid lightgray
+}
+
+.border-bottom-gray{
+    border-bottom: 1px solid lightgray
+}

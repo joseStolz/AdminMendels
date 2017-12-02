@@ -101,10 +101,27 @@ angular.module('starter.controllers', [])
                 });
                 $state.go('app.contact');
             }
-        })
 
+            
+
+
+        })
+        .controller('promoctrl', function ($scope, $stateParams,$state,$ionicHistory) {
+        setTimeout(function(){
+            $('.collapsible').collapsible();
+        },500)
+        $scope.select_comercioAmigo = function () {
+                $.getJSON('http://localhost/AdminMendels/ws/wsMain.php?action=select_comercioAmigo', {
+                    action: 'select_comercioAmigo',
+                }, function (json) {
+                    console.log(json);
+                    $scope.comercioAmigo = json;
+                    $scope.$apply();
+                })
+            };
+        })
         .controller('categoryctrl', function ($scope, $stateParams,$state,$ionicHistory) {
-  $scope.goToCategory = function(){
+            $scope.goToCategory = function(){
                 $ionicHistory.nextViewOptions({
                 disableAnimate: true,
                 disableBack: true

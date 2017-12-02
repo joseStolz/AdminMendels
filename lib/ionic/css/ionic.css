@@ -6921,11 +6921,11 @@ a.button {
  * --------------------------------------------------
  * Using flexbox for the grid, inspired by Philip Walton:
  * http://philipwalton.github.io/solved-by-flexbox/demos/grids/
- * By default each .col within a .row will evenly take up
- * available width, and the height of each .col with take
- * up the height of the tallest .col in the same .row.
+ * By default each .colIonic within a .rowIonic will evenly take up
+ * available width, and the height of each .colIonic with take
+ * up the height of the tallest .colIonic in the same .rowIonic.
  */
-.row {
+.rowIonic {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -6935,22 +6935,22 @@ a.button {
   padding: 5px;
   width: 100%; }
 
-.row-wrap {
+.rowIonic-wrap {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.row-no-padding {
+.rowIonic-no-padding {
   padding: 0; }
-  .row-no-padding > .col {
+  .rowIonic-no-padding > .colIonic {
     padding: 0; }
 
-.row + .row {
+.rowIonic + .rowIonic {
   margin-top: -5px;
   padding-top: 0; }
 
-.col {
+.colIonic {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -moz-box-flex: 1;
@@ -6962,94 +6962,94 @@ a.button {
   width: 100%; }
 
 /* Vertically Align Columns */
-/* .row-* vertically aligns every .col in the .row */
-.row-top {
+/* .rowIonic-* vertically aligns every .colIonic in the .rowIonic */
+.rowIonic-top {
   -webkit-box-align: start;
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   align-items: flex-start; }
 
-.row-bottom {
+.rowIonic-bottom {
   -webkit-box-align: end;
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
   -moz-align-items: flex-end;
   align-items: flex-end; }
 
-.row-center {
+.rowIonic-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
 
-.row-stretch {
+.rowIonic-stretch {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -moz-align-items: stretch;
   align-items: stretch; }
 
-.row-baseline {
+.rowIonic-baseline {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   -webkit-align-items: baseline;
   -moz-align-items: baseline;
   align-items: baseline; }
 
-/* .col-* vertically aligns an individual .col */
-.col-top {
+/* .colIonic-* vertically aligns an individual .colIonic */
+.colIonic-top {
   -webkit-align-self: flex-start;
   -moz-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start; }
 
-.col-bottom {
+.colIonic-bottom {
   -webkit-align-self: flex-end;
   -moz-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end; }
 
-.col-center {
+.colIonic-center {
   -webkit-align-self: center;
   -moz-align-self: center;
   -ms-flex-item-align: center;
   align-self: center; }
 
 /* Column Offsets */
-.col-offset-10 {
+.colIonic-offset-10 {
   margin-left: 10%; }
 
-.col-offset-20 {
+.colIonic-offset-20 {
   margin-left: 20%; }
 
-.col-offset-25 {
+.colIonic-offset-25 {
   margin-left: 25%; }
 
-.col-offset-33, .col-offset-34 {
+.colIonic-offset-33, .colIonic-offset-34 {
   margin-left: 33.3333%; }
 
-.col-offset-50 {
+.colIonic-offset-50 {
   margin-left: 50%; }
 
-.col-offset-66, .col-offset-67 {
+.colIonic-offset-66, .colIonic-offset-67 {
   margin-left: 66.6666%; }
 
-.col-offset-75 {
+.colIonic-offset-75 {
   margin-left: 75%; }
 
-.col-offset-80 {
+.colIonic-offset-80 {
   margin-left: 80%; }
 
-.col-offset-90 {
+.colIonic-offset-90 {
   margin-left: 90%; }
 
 /* Explicit Column Percent Sizes */
 /* By default each grid column will evenly distribute */
 /* across the grid. However, you can specify individual */
 /* columns to take up a certain size of the available area */
-.col-10 {
+.colIonic-10 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 10%;
   -moz-box-flex: 0;
@@ -7058,7 +7058,7 @@ a.button {
   flex: 0 0 10%;
   max-width: 10%; }
 
-.col-20 {
+.colIonic-20 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 20%;
   -moz-box-flex: 0;
@@ -7067,7 +7067,7 @@ a.button {
   flex: 0 0 20%;
   max-width: 20%; }
 
-.col-25 {
+.colIonic-25 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 25%;
   -moz-box-flex: 0;
@@ -7076,7 +7076,7 @@ a.button {
   flex: 0 0 25%;
   max-width: 25%; }
 
-.col-33, .col-34 {
+.colIonic-33, .colIonic-34 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 33.3333%;
   -moz-box-flex: 0;
@@ -7085,7 +7085,7 @@ a.button {
   flex: 0 0 33.3333%;
   max-width: 33.3333%; }
 
-.col-50 {
+.colIonic-50 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 50%;
   -moz-box-flex: 0;
@@ -7094,7 +7094,7 @@ a.button {
   flex: 0 0 50%;
   max-width: 50%; }
 
-.col-66, .col-67 {
+.colIonic-66, .colIonic-67 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 66.6666%;
   -moz-box-flex: 0;
@@ -7103,7 +7103,7 @@ a.button {
   flex: 0 0 66.6666%;
   max-width: 66.6666%; }
 
-.col-75 {
+.colIonic-75 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 75%;
   -moz-box-flex: 0;
@@ -7112,7 +7112,7 @@ a.button {
   flex: 0 0 75%;
   max-width: 75%; }
 
-.col-80 {
+.colIonic-80 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 80%;
   -moz-box-flex: 0;
@@ -7121,7 +7121,7 @@ a.button {
   flex: 0 0 80%;
   max-width: 80%; }
 
-.col-90 {
+.colIonic-90 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 90%;
   -moz-box-flex: 0;
@@ -7144,7 +7144,7 @@ a.button {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .responsive-sm .col, .responsive-sm .col-10, .responsive-sm .col-20, .responsive-sm .col-25, .responsive-sm .col-33, .responsive-sm .col-34, .responsive-sm .col-50, .responsive-sm .col-66, .responsive-sm .col-67, .responsive-sm .col-75, .responsive-sm .col-80, .responsive-sm .col-90 {
+    .responsive-sm .colIonic, .responsive-sm .colIonic-10, .responsive-sm .colIonic-20, .responsive-sm .colIonic-25, .responsive-sm .colIonic-33, .responsive-sm .colIonic-34, .responsive-sm .colIonic-50, .responsive-sm .colIonic-66, .responsive-sm .colIonic-67, .responsive-sm .colIonic-75, .responsive-sm .colIonic-80, .responsive-sm .colIonic-90 {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -moz-box-flex: 1;
@@ -7165,7 +7165,7 @@ a.button {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .responsive-md .col, .responsive-md .col-10, .responsive-md .col-20, .responsive-md .col-25, .responsive-md .col-33, .responsive-md .col-34, .responsive-md .col-50, .responsive-md .col-66, .responsive-md .col-67, .responsive-md .col-75, .responsive-md .col-80, .responsive-md .col-90 {
+    .responsive-md .colIonic, .responsive-md .colIonic-10, .responsive-md .colIonic-20, .responsive-md .colIonic-25, .responsive-md .colIonic-33, .responsive-md .colIonic-34, .responsive-md .colIonic-50, .responsive-md .colIonic-66, .responsive-md .colIonic-67, .responsive-md .colIonic-75, .responsive-md .colIonic-80, .responsive-md .colIonic-90 {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -moz-box-flex: 1;
@@ -7186,7 +7186,7 @@ a.button {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .responsive-lg .col, .responsive-lg .col-10, .responsive-lg .col-20, .responsive-lg .col-25, .responsive-lg .col-33, .responsive-lg .col-34, .responsive-lg .col-50, .responsive-lg .col-66, .responsive-lg .col-67, .responsive-lg .col-75, .responsive-lg .col-80, .responsive-lg .col-90 {
+    .responsive-lg .colIonic, .responsive-lg .colIonic-10, .responsive-lg .colIonic-20, .responsive-lg .colIonic-25, .responsive-lg .colIonic-33, .responsive-lg .colIonic-34, .responsive-lg .colIonic-50, .responsive-lg .colIonic-66, .responsive-lg .colIonic-67, .responsive-lg .colIonic-75, .responsive-lg .colIonic-80, .responsive-lg .colIonic-90 {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -moz-box-flex: 1;
@@ -7422,15 +7422,15 @@ a.button {
   position: absolute !important;
   z-index: 1; }
 
-.collection-repeat-container {
+.colIoniclection-repeat-container {
   position: relative;
   z-index: 1; }
 
-.collection-repeat-after-container {
+.colIoniclection-repeat-after-container {
   z-index: 0;
   display: block;
   /* when scrolling horizontally, make sure the after container doesn't take up 100% width */ }
-  .collection-repeat-after-container.horizontal {
+  .colIoniclection-repeat-after-container.horizontal {
     display: inline-block; }
 
 /**

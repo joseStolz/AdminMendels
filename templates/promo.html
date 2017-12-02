@@ -1,5 +1,5 @@
 <ion-view>
-    <ion-content overflow-scroll="true">
+    <ion-content overflow-scroll="true" ng-init="select_comercioAmigo()">
            <link href="./Materialize - Material Design Admin Template_files/style.css" type="text/css" rel="stylesheet">
 	   <div class="section no-pad-bot" id="index-banner" style="padding-top:0px">
         <div  class="grey darken-3">
@@ -9,14 +9,14 @@
 
         </div>
          <div class="row">
-			<div class="col s2">
+			<div class="col m2 s12" ng-repeat="c in comercioAmigo">
 			<div class="card blue-grey darken-1">
               <div class="card-content white-text">
-                <span class="card-title">Comercio Amigo</span>
-                <p>Nombre del Comercio.</p>
+                <p>{{c.nombre_comercio}}</p>
+                     
 				 <div class="row">
-					<div class="col s12 m6">
-						<img src="https://t4.ftcdn.net/jpg/00/91/05/43/500_F_91054322_sIsnFN7Mn4GCMjYiD3h6Qgc7pwgd7Inp.jpg" style="width:100%" />
+					<div class="col 12">
+						<img src="{{c.logo_comercio}}" style="width:100%" />
 					</div>				
 				 </div>
               </div>
@@ -24,75 +24,18 @@
                 <a href="#">Editar</a>
                 <a href="#">Eliminar</a>
               </div>
-            </div>
-			</div>
-			<div class="col s2">
-			<div class="card blue-grey darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">Comercio Amigo</span>
-                <p>Nombre del Comercio.</p>
-				 <div class="row">
-					<div class="col s12 m6">
-						<img src="https://t4.ftcdn.net/jpg/00/91/05/43/500_F_91054322_sIsnFN7Mn4GCMjYiD3h6Qgc7pwgd7Inp.jpg" style="width:100%" />
-					</div>				
-				 </div>
-              </div>
-              <div class="card-action">
-                <a href="#">Editar</a>
-                <a href="#">Eliminar</a>
+              <div>
               </div>
             </div>
-			</div>
-	        <div class="col s2">
-			<div class="card blue-grey darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">Comercio Amigo</span>
-                <p>Nombre del Comercio.</p>
-				 <div class="row">
-					<div class="col s12 m6">
-						<img src="https://t4.ftcdn.net/jpg/00/91/05/43/500_F_91054322_sIsnFN7Mn4GCMjYiD3h6Qgc7pwgd7Inp.jpg" style="width:100%" />
-					</div>				
-				 </div>
-              </div>
-              <div class="card-action">
-                <a href="#">Editar</a>
-                <a href="#">Eliminar</a>
-              </div>
-            </div>
-			</div>
-			<div class="col s2">
-			<div class="card blue-grey darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">Comercio Amigo</span>
-                <p>Descripcion.</p>
-				 <div class="row">
-					<div class="col s12 m6">
-						<img src="https://t4.ftcdn.net/jpg/00/91/05/43/500_F_91054322_sIsnFN7Mn4GCMjYiD3h6Qgc7pwgd7Inp.jpg" style="width:100%" />
-					</div>			
-				 </div>
-              </div>
-              <div class="card-action">
-                <a href="#">Editar</a>
-                <a href="#">Eliminar</a>
-              </div>
-            </div>
-			</div>
-			<div class="col s2">
-			<div class="card blue-grey darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">Comercio Amigo</span>
-                <p>Descripcion.</p>
-				 <div class="row">
-					<div class="col s12 m6">
-						<img src="https://t4.ftcdn.net/jpg/00/91/05/43/500_F_91054322_sIsnFN7Mn4GCMjYiD3h6Qgc7pwgd7Inp.jpg" style="width:100%" />
-					</div>			
-				 </div>
-              </div>
-              <div class="card-action">
-                <a href="#">Editar</a>
-                <a href="#">Eliminar</a>
-              </div>
-            </div>
+              <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">location_on</i>Sitios</div>
+                    <div class="collapsible-body"><span ng-repeat="p in c.places">{{p.lugar}}</span></div>
+                    <div class="blue-grey darken-1 card-action" style="padding-right: 10px;padding-left: 10px;color:white;width:100%;text-align:center">
+                      <a href="#"><i style="color:white;margin-top: 10px" class="material-icons">add_circle</i></a>                   
+                    </div>
+                  </li>
+              </ul>
 			</div>
 			</div>
       </div>

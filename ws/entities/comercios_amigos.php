@@ -34,12 +34,24 @@ function delete_comercioAmigo($id) {
 }
 
 function select_comercioAmigo($id){
-	global $con;
+    global $con;
+    global $ip;
     $query = "SELECT * FROM `comercios_amigos`";
-    $result = mysqli_query($con, $query);
-    if ($result === true) {
-        echo 1;
-    } else {
-        echo mysqli_error($con);
+    $sth = mysqli_query($con, $query);
+    $comercios = array();
+    $finalArray = array();
+    while ($r = mysqli_fetch_assoc($sth)) {
+        $comercios['id_comercio'] = $r['id_comercio'];
+        $comercios['nombre_comercio'] = $r['nombre_comercio'];              
+        $comercios['logo_comercio'] = $r['logo_comercio'];
+        $comercios['places']= array();
+        $query2 = "SELECT * FROM `comerciosxlugares` WHERE id_comercio = ".$r['id_comercio'];
+
+        $sth2 = mysqli_query($con, $query2);
+         while ($r2 = mysqli_fetch_assoc($sth2)) {
+            $comercios['places'] = $r2;      
+         }
+         array_push($finalArray,$comercios);
     }
+    print json_encode($finalArray);
 }

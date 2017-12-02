@@ -37,6 +37,6 @@ switch ($action) {
 	break;
 	case 'select_comercioAmigo':
 	    $id = isset($_GET["id"]) ? $_GET["id"] : (isset($_POST["id"]) ? $_POST["id"] : "0");
-		select_comercioAmigo($id,$business_logo,$business_name);
+		select_comercioAmigo($id);
 	break;	
 }
